@@ -23,9 +23,9 @@ public:
     
     Ray(float x, float y) 
         : startX(x), startY(y), 
-          dirX(1), dirY(1),     // Diagonal direction
+          dirX(1), dirY(1),     // diagonal direction
           currentLength(0),
-          speed(2.0) {          // Slowed down the speed
+          speed(2.0) {          // slowed spped
         calculateMaxLength();
     }
     
@@ -51,7 +51,7 @@ public:
     }
     
     void render(SDL_Renderer* renderer) {
-        SDL_SetRenderDrawColor(renderer, 255, 255, 0, 255);  // Yellow ray
+        SDL_SetRenderDrawColor(renderer, 255, 255, 0, 255);  // yellow ray
         float endX = startX + dirX * currentLength;
         float endY = startY + dirY * currentLength;
         SDL_RenderDrawLine(renderer, startX, startY, endX, endY);
