@@ -4,8 +4,8 @@
 #include <cmath>
 
 const int WINDOW_WIDTH = 800;
-const int WINDOW_HEIGHT = 600;
-const int FPS = 60;  // Added frame rate control
+const int WINDOW_HEIGHT = 800;
+const int FPS = 60;  //  frame rate control
 const int FRAME_DELAY = 1000 / FPS;
 
 const int GRID_CELLS = 20;
@@ -108,7 +108,7 @@ int main(int argc, char* argv[]) {
         SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
         SDL_RenderClear(renderer);
 
-        // Draw grid
+        // draw grid
         SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
         
         for (int x = 0; x <= GRID_CELLS; x++) {
